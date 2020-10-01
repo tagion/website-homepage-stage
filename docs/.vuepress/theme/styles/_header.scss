@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: $blue-dark;
   height: $header-height;
   padding-bottom: 0.2rem;
   border-bottom: 1px dotted rgb(228, 231, 235);
@@ -24,13 +24,13 @@
   }
 
   .nav {
-    font-size: 0.9em;
+    font-size: 1.4em;
     font-weight: 400;
     display: flex;
     align-items: center;
 
     a {
-      color: mix($primary, #fff, 90%);
+      color: $blue-light;
       opacity: 0.7;
       font-weight: 500;
       position: relative;
@@ -82,10 +82,22 @@
   }
 
   .header__logo {
-    height: 2.4rem;
+    height: 3.4rem;
     opacity: 0.85;
     position: relative;
-    transition: opacity 100ms linear;
+		transition: opacity 100ms linear;
+
+		@include media-breakpoint-down(xl) {
+			height: 2.25rem;
+			margin-right: 1.75rem;
+		}
+		@include media-breakpoint-down(lg) {
+			height: 1.75rem;
+			margin-right: 1rem;
+		}
+		@include media-breakpoint-down(md) {
+			height: 3rem;
+		}
 
     &:hover {
       opacity: 1;
@@ -94,7 +106,6 @@
 
   .header__menu {
     display: flex;
-    min-width: 10rem;
     align-items: center;
     justify-content: center;
   }
@@ -119,13 +130,25 @@
 
 body.scrolled-down {
   @include media-breakpoint-down(md) {
-    .layout-page:not(.sidebar-open) {
-      .header {
-        // border-color: transparent;
-        // transform: translateY(-1 * $header-height);
-      }
-    }
+    // .layout-page:not(.sidebar-open) {
+    //   // .header {
+    //   //   // border-color: transparent;
+    //   //   // transform: translateY(-1 * $header-height);
+    //   // }
+    // }
   }
+}
+
+.nav-link {
+	font-size: 1.5rem;
+
+	@include media-breakpoint-down(xl) {
+		font-size: 1.2rem;
+	}
+	@include media-breakpoint-down(lg) {
+		font-size: 1.1rem;
+		padding: 0.5rem;
+	}
 }
 
 .nav a.nav-link--button {
@@ -137,7 +160,7 @@ body.scrolled-down {
   transition: all 100ms;
   color: mix($primary, #fff, 20%);
   padding: 0.2rem 0.8rem;
-  color: $primary-lighter;
+	color: $primary-lighter;
 
   &:hover {
     background: #ffffff11;
@@ -171,8 +194,8 @@ body.scrolled-down {
     }
   }
 
-  .header__logo {
-    height: 3rem;
-    margin-right: .8rem;
-  }
+  // .header__logo {
+  //   height: 3rem;
+	// 	margin-right: .8rem;
+  // }
 }

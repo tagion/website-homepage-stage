@@ -6,7 +6,9 @@ import {
   CardPlugin,
   BNav,
   BButton,
-  BInputGroup
+	BInputGroup,
+	BTabs,
+	BTab
 } from "bootstrap-vue";
 import * as VueScrollTo from "vue-scrollto";
 import axios from "axios";
@@ -38,6 +40,9 @@ export default ({ Vue, options, router, siteData }) => {
   Vue.use(LoadScript);
   Vue.component("b-nav", BNav);
   Vue.component("b-button", BButton);
+	Vue.component("b-input-group", BInputGroup);
+	Vue.component('b-tabs', BTabs);
+	Vue.component('b-tab', BTab);
   Vue.component("b-input-group", BInputGroup);
 
   let socketLink = 'http://localhost:4050/monitor';

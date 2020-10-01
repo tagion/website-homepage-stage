@@ -14,19 +14,15 @@
         />
       </div>
       <div class="team-table__card-header">
-          <h5>
-            {{name}}
-            <br />
-            <span class="team-table__card-position">{{title}}</span>
-          </h5>
-        </div>
-      <div class="team-table__card-about">
-        <p v-html="aboutFormatted"></p>
-      </div>
-      <p class="team-table__card-read-more">LinkedIn</p>
+				<div class="team-table__card-name">{{name}}</div>
+				<div class="team-table__card-position">{{title}}</div>
+				<div class="team-table__card-about">
+					<div v-html="aboutFormatted"></div>
+				</div>
+				<div class="team-table__card-read-more">LinkedIn</div>
+			</div>
     </div>
   </a>
-
 </template>
 
 <script>

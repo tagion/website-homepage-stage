@@ -13,7 +13,7 @@
       class="t-form"
       :class="{'t-form--dark': !!dark}"
     >
-      <b-input-group size="sm" pill>
+      <b-input-group size="sm" pill class="newsletter-wrapper">
         <b-input
           class="email-field"
           type="email"
@@ -28,10 +28,10 @@
         />
         <div class="input-group-append">
           <b-button
-            variant="primary"
             :type="!inputDisabled ? 'submit' : ''"
             :class="{disabled: inputDisabled}"
             :disabled="inputDisabled"
+						class="input-group-append__button"
             aria-label="Subscribe"
           >
             <span v-if="emailProgress">
@@ -39,7 +39,8 @@
               <span class="d-none d-md-inline">Subscribing...</span>
             </span>
             <span v-else>
-              <span class>Join Newsletter</span>
+              <span class="fas fa-envelope"></span>
+              <span>Join Newsletter</span>
             </span>
           </b-button>
         </div>
