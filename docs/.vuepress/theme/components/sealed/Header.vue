@@ -3,13 +3,13 @@
     <b-container class="d-flex justify-content-between">
       <div class="header__logo-wrapper">
         <router-link to="/">
-          <img class="header__logo" src="/logo-tagion.svg" alt="Tagion Logo" />
+          <img src='/icons/tagion-logo.png' class="header__logo" alt="Tagion Logo">
         </router-link>
-        <NavLinks class="header__nav d-none d-lg-flex" />
       </div>
 
       <div class="header__menu justify-content-end">
-        <SearchBox v-if="$site.themeConfig.search !== false" />
+				<NavLinks class="header__nav d-none d-lg-flex" />
+        <!-- <SearchBox v-if="$site.themeConfig.search !== false" /> -->
       </div>
     </b-container>
   </header>

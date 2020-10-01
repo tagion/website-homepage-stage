@@ -56,7 +56,7 @@
             position: relative;
             padding-bottom: 1.25em;
             margin-bottom: 2.2em;
-            
+
             h4 {
                 position: absolute;
                 bottom: 0;
@@ -83,14 +83,14 @@
                 }
                 &:first-of-type:after {
                     content: "";
-                    width: 10px;
-                    height: 10px;
-                    background: #3c4257;
+                    width: 20px;
+                    height: 20px;
+                    background: $blue-light;
                     border: 2px solid #ffffff;
                     @include border-radius(50%);
                     position: absolute;
-                    left: 54px;
-                    top: 8px;
+                    left: 49px;
+										top: 0.5px;
                     z-index: 2;
                 }
                 li {
@@ -109,10 +109,10 @@
         }
     }
     section.year--future {
-       
+
 
         section {
-    
+
             ul {
                 &:first-of-type:after {
                     background: #b3b7c2;
@@ -122,10 +122,10 @@
         }
     }
     section.year {
-       
+
 
         section.month--future {
-    
+
             ul {
                 &:first-of-type:after {
                     background: #b3b7c2;
