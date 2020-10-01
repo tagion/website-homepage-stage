@@ -16,9 +16,16 @@ import VueAxios from "vue-axios";
 import LoadScript from "vue-plugin-load-script";
 import { AnalyticsPlugin } from "./plugins/analytics";
 import { PrivacyPlugin } from "./plugins/privacy";
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { addIcons } from "./icons";
+import VueSocketIO from 'vue-socket.io'
 import "focus-visible";
 
+addIcons();
+
 export default ({ Vue, options, router, siteData }) => {
+  Vue.component('font-awesome-icon', FontAwesomeIcon)
+  Vue.config.productionTip = false
   Vue.use(VueScrollTo, {
     easing: "ease-in-out"
   });
@@ -36,4 +43,19 @@ export default ({ Vue, options, router, siteData }) => {
 	Vue.component("b-input-group", BInputGroup);
 	Vue.component('b-tabs', BTabs);
 	Vue.component('b-tab', BTab);
+  Vue.component("b-input-group", BInputGroup);
+
+  let socketLink = 'http://localhost:4050/monitor';
+
+  if (process.env.APP_ENV === 'production') {
+    socketLink = 'https://api.monitor.tagion.org/monitor';
+  } else if (process.env.APP_ENV === 'staging') {
+    socketLink = 'https://tagion-monitor-staging.azurewebsites.net/monitor';
+  }
+
+  Vue.use(new VueSocketIO({
+    debug: false,
+    vuex: false,
+    connection: socketLink
+  }))
 };

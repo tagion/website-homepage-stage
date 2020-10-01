@@ -1,29 +1,29 @@
 <template>
   <b-card
     tag="article"
-    class="b-card-token-form mx-4 my-5 p-2"
+    class="testnet-card"
   >
-    <b-card-text class="b-card-text-token-form">
-      <div class="title-token-form m-2">Tagion Group Provider</div>
+    <h2>Tagion Group Provider</h2>
 
+    <b-card-text>
+      You can run a separate testnet, by creating a group and using a provided token.
+    </b-card-text>
+    <div class="px-1 py-2 pb-3">
       <form
         id="token-form"
         @submit="saveFormValues"
       >
 
-        <div class="text-left d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
           <b-input
             id="name"
             v-model="name"
             type="text"
             name="name"
-            placeholder="Enter group tag name"
-            style="width: 100%;"
-            class="b-input-token-form mb-1"
+            size="sm"
+            placeholder="Unique name"
+            class="mx-2"
           />
-        </div>
-
-        <div class="text-left d-flex justify-content-center">
           <b-input
             id="age"
             v-model="age"
@@ -31,28 +31,55 @@
             name="age"
             min="3"
             max='10'
-            placeholder="Enter max nodes in group"
-            style="width: 100%;"
-            class="b-input-token-form mt-1"
+            size="sm"
+            placeholder="Max nodes"
+            class="mx-2"
           />
-        </div>
 
-        <div class="mt-3 d-flex justify-content-end align-items-center">
           <b-button
             type="submit"
             variant="primary"
             id='submit'
-            class="mr-3 p-2"
+            size="sm"
+            class="mx-2 get-token-button"
             v-on:click="isHidden = false"
           >
-            Submit
+            Get Token
           </b-button>
         </div>
 
-        <div class="d-flex flex-row justify-content-center align-items-center mt-4 ml-3 mr-3" v-if="!isHidden">
-          <b-input type='text' class="b-input-token-form" id="testing-code" v-model="testingCode" style="width: 90%"/>
+        <div class="d-flex justify-content-center mt-3">
+          <b-input-group
+            prepend="unique name"
+            size="sm"
+            class="mx-2"
+          >
+            <b-input
+              type="text"
+              :disabled="true"
+              value="1324"
+              required
+            />
+            <div class="input-group-append">
+              <b-button variant="secondary">
+                <font-awesome-icon icon="copy" />
+                </svg>
+              </b-button>
+            </div>
+          </b-input-group>
+          <!-- <b-input
+            type='text'
+            class="b-input-token-form"
+            id="testing-code"
+            v-model="testingCode"
+            style="width: 90%"
+          />
 
-          <div type='text' id="copy-to-clipboard" class="d-flex flex-row justify-content-center align-items-center">
+          <div
+            type='text'
+            id="copy-to-clipboard"
+            class="d-flex flex-row justify-content-center align-items-center"
+          >
             <svg
               fill="none"
               viewBox="0 0 24 24"
@@ -70,19 +97,18 @@
                 "
               >
               </path>
-            </svg>
-          </div>
+            </svg> -->
         </div>
 
       </form>
 
-    </b-card-text>
+    </div>
   </b-card>
 </template>
 
 <script>
 export default {
-  name: 'TokenForm',
+  name: "TokenForm",
   data() {
     return {
       errors: [],
@@ -90,48 +116,24 @@ export default {
       age: null,
       testingCode: "1234", // get from api
       isHidden: true,
-    }
+    };
   },
   methods: {
-    saveFormValues: function(event) {
+    saveFormValues: function (event) {
       event.preventDefault();
-      console.log('name:', event.target.elements.name.value);
-      console.log('age:', event.target.elements.age.value);
+      console.log("name:", event.target.elements.name.value);
+      console.log("age:", event.target.elements.age.value);
     },
-    copyTestingCode () {
+    copyTestingCode() {
       console.log(`Testing code has been copied to clipboard`);
     },
-  }
+  },
 };
 </script>
 
 <style>
-  .b-card-token-form {
-    max-width:100%;
-    border-radius: 5px;
-    background-color: #f5f7fb;
-    overflow: hidden;
-    font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
-  }
-
-  .b-card-text-token-form {
-    text-align: center;
-    font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
-  }
-
-  .svg {
-    width: 2rem;
-    cursor: pointer;
-  }
-
-  .title-token-form {
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  .b-input-token-form {
-    font-size: 0.75rem;
-  }
+.svg {
+  width: 2rem;
+  cursor: pointer;
+}
 </style>
