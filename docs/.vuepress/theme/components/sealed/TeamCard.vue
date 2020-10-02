@@ -14,9 +14,9 @@
         />
       </div>
       <div class="team-table__card-header">
-				<div class="team-table__card-name">{{name}}</div>
-				<div class="team-table__card-position">{{title}}</div>
-				<div class="team-table__card-about">
+				<div class="team-table__card-name paragraph1">{{name}}</div>
+				<div class="team-table__card-position paragraph1">{{title}}</div>
+				<div class="team-table__card-about paragraph2">
 					<div v-html="aboutFormatted"></div>
 				</div>
 				<div class="team-table__card-read-more">LinkedIn</div>

@@ -1,10 +1,12 @@
 <template>
-  <layout-default
-    class="landing-page"
-    id="landing-page"
-  >
+  <layout-default class="landing-page" id="landing-page">
     <template slot="root-content">
       <reveal-group class="landing">
+
+
+
+
+
 				<div class="intro">
           <b-container class="intro__container">
 
@@ -18,7 +20,7 @@
 									direction="up"
 								>
 									<h1>
-										<div class="intro__quote-text">Open Monetary and Banking System</div>
+										<div class="intro__quote-text heading1">Open Monetary and Banking System</div>
 									</h1>
 								</div>
 
@@ -28,7 +30,7 @@
 									opacity
 									direction="up"
 								>
-									<p class="intro__summary-text">Tagion is a decentralised and permissionless monetary and banking system run and owned by its users. Its genuinely
+									<p class="intro__summary-text paragraph1">Tagion is a decentralised and permissionless monetary and banking system run and owned by its users. Its genuinely
 										fair and democratic governance model builds on the ideas and design principles of Nobel Memorial Prize winner in
 										Economic Sciences, Elinor Ostrom. Tagion is self-sustainable and seen as a common resource that lets developers
 										create new financial markets with a few clicks.
@@ -73,18 +75,26 @@
           </b-container>
         </div>
 
+
+
+
+
+
+
+
+
+
+
         <div class="hero">
-          <div class="hero__background"></div>
           <b-container class="lcontainer">
+
             <div
               class="hero__quote"
               child
               opacity
               direction="up"
             >
-              <h2>
-                <span class="hero__text">Why Tagion?</span>
-              </h2>
+              <h2 class="heading1"> Why Tagion? </h2>
             </div>
             <div
               class="hero__summary"
@@ -92,7 +102,7 @@
               opacity
               direction="up"
             >
-              <p>The world has too many financial (and physical) borders. Tagion was born to break down those borders
+              <p class="paragraph1">The world has too many financial (and physical) borders. Tagion was born to break down those borders
 								and enable seamlessly peer-to-peer money transfers. Cheap, fair, and fast for anyone anywhere.
 							</p>
             </div>
@@ -103,16 +113,16 @@
 								<div class="hero__feature-card__left">
 									<div class="hero__feature-card__internal">
 										<img src="/icons/decentralized-icon.png" />
-										<h4>Decentralized Exchange</h4>
-										<p>Pay with anything anywhere. DEX is an open protocol that enables a trustless exchange of any digital currency that supports HTLC (Hash Time Locked Contract).</p>
+										<h4 class="heading2">Decentralized Exchange</h4>
+										<p class="paragraph2">Pay with anything anywhere. DEX is an open protocol that enables a trustless exchange of any digital currency that supports HTLC (Hash Time Locked Contract).</p>
 									</div>
 								</div>
 
 								<div class="hero__feature-card__right">
 									<div class="hero__feature-card__internal">
 										<img src="/icons/supply-icon.png" />
-										<h4>Elastic Money Supply</h4>
-										<p>To scale properly, the money supply must match demand. Tagion does not have a hard cap, but makes use of elastic supply, which aims to create a stable price level.</p>
+										<h4 class="heading2">Elastic Money Supply</h4>
+										<p class="paragraph2">To scale properly, the money supply must match demand. Tagion does not have a hard cap, but makes use of elastic supply, which aims to create a stable price level.</p>
 									</div>
 								</div>
 							</div>
@@ -121,16 +131,16 @@
 								<div class="hero__feature-card__left">
 									<div class="hero__feature-card__internal">
 										<img src="/icons/governance-icon.png" />
-										<h4>Inclusive Governance</h4>
-										<p>Tagion and its resources are governed as a Common. All have equal right to participate, but it is the contribution which gives reward and power.</p>
+										<h4 class="heading2">Inclusive Governance</h4>
+										<p class="paragraph2">Tagion and its resources are governed as a Common. All have equal right to participate, but it is the contribution which gives reward and power.</p>
 									</div>
 								</div>
 
 								<div class="hero__feature-card__right">
 									<div class="hero__feature-card__internal">
 										<img src="/icons/technology-icon.png" />
-										<h4>Scalable Core Technology</h4>
-										<p>Tagion builds on a modular and scalable core. Each module can be changed and optimised. The main modules comprise of the distributed database, scripting engine, Hashgraph and gossip mechanism.</p>
+										<h4 class="heading2">Scalable Core Technology</h4>
+										<p class="paragraph2">Tagion builds on a modular and scalable core. Each module can be changed and optimised. The main modules comprise of the distributed database, scripting engine, Hashgraph and gossip mechanism.</p>
 									</div>
 								</div>
 							</div>
@@ -139,6 +149,17 @@
 
           </b-container>
         </div>
+
+
+
+
+
+
+
+
+
+
+
 
 				<div class="how">
           <div class="how__background"></div>
@@ -149,9 +170,7 @@
               opacity
               direction="up"
             >
-              <h2>
-                <span class="how__text">How do we do it?</span>
-              </h2>
+              <h2 class="heading1"> How do we do it? </h2>
             </div>
             <div
               class="how__summary"
@@ -159,7 +178,7 @@
               opacity
               direction="up"
             >
-              <p>
+              <p class="paragraph1">
 								Current cryptocurrency systems have failed to gain wide-spread adoption, as several problems prevent these from doing so.
 							</p>
             </div>
@@ -174,12 +193,12 @@
 									>
 										<div class="feature-card__internal">
 											<img src="/icons/network-throughput-icon.png" class="how__icon"/>
-											<h4 class="how__feature-card">Network Throughput</h4>
-											<p class="how__feature-card">
+											<h4 class="how__feature-card heading2">Network Throughput</h4>
+											<p class="how__feature-card paragraph2">
 												Tagion uses hashgraph for consensus, which in the Tagion implementation, makes it possible to process more than 20.000
 												transactions per second per shard. In comparison, VISA does around 1,700 transactions per second on average.
 											</p>
-											<p class="how__feature-card">
+											<p class="how__feature-card paragraph2">
 												Tagion is architected to be able to scale to hundreds of Shards that operate in tandem without loss of efficiency
 											</p>
 										</div>
@@ -194,8 +213,8 @@
 									>
 										<div class="feature-card__internal">
 											<img src="/icons/scalability-icon.png" class="how__icon"/>
-											<h4 class="how__feature-card">Scalability</h4>
-											<p class="how__feature-card">
+											<h4 class="how__feature-card heading2">Scalability</h4>
+											<p class="how__feature-card paragraph2">
 												Combining Tagion DEX with DART provides Tagion with the speed and scalability needed to become an underlying network for any everyday financial services.
 											</p>
 										</div>
@@ -212,20 +231,20 @@
 									>
 										<div class="feature-card__internal">
 											<img src="/icons/speed-of-transaction-icon.png" class="how__icon"/>
-											<h4 class="how__feature-card">Speed of Transaction</h4>
-											<p class="how__feature-card">
+											<h4 class="how__feature-card heading2">Speed of Transaction</h4>
+											<p class="how__feature-card paragraph2">
 												Transactions on Tagion are validated in between two or three seconds, placing it on par with major credit card operators in terms of validation speed.
 											</p>
-											<p class="how__feature-card">
+											<p class="how__feature-card paragraph2">
 												A fast validation time is reached through the use of Hashgraph for consensus and an efficient (Patent Pending) gossip Mechanism.
 												The Hashgraph algorithm and the accompanying mathematical proof was initially discovered by Leemon Baird.
 											</p>
-											<p class="how__feature-card">
+											<p class="how__feature-card paragraph2">
 												The algorithm ensures that all nodes, infinite time, reach the same order of events - as long as more than two-thirds of the nodes in the network
 												follow the same consensus rules. In doing so, the nodes confirm and validate any action on the network, such as a money transfer,
 												money exchange, or data interactions.
 											</p>
-											<p class="how__feature-card">
+											<p class="how__feature-card paragraph2">
 												The gossip mechanisms optimise data exchange between nodes to happen most efficiently.
 											</p>
 										</div>
@@ -240,8 +259,8 @@
 									>
 										<div class="feature-card__internal">
 											<img src="/icons/market-liquidity-icon.png" class="how__icon"/>
-											<h4 class="how__feature-card">Market Liquidity</h4>
-											<p class="how__feature-card">
+											<h4 class="how__feature-card heading2">Market Liquidity</h4>
+											<p class="how__feature-card paragraph2">
 												Better market liquidity results in a more efficient market. With Tagions as an intermediate currency, it is possible to exchange all tokenised currencies
 												seamlessly. By pairing all alien currencies with Tagions, the resulting reduction of currency pairs enables a simpler market with higher liquidity.
 											</p>
@@ -259,16 +278,16 @@
 									>
 										<div class="feature-card__internal">
 											<img src="/icons/storage-power-icon.png" class="how__icon"/>
-											<h4 class="how__feature-card">Storage and Computial power</h4>
-											<p class="how__feature-card">
+											<h4 class="how__feature-card heading2">Storage and Computial power</h4>
+											<p class="how__feature-card paragraph2">
 												Most DLTs use a decentralised, immutable database for storage. The blockchain data structure is immutable, meaning all data should be stored forever.
 											</p>
-											<p class="how__feature-card">
+											<p class="how__feature-card paragraph2">
 												Tagion uses a distributed database for storage, meaning a node only stores a part of the data. DART (Distributed Archive of Random Transactions)
 												gives away with immutability, and only the output of a transaction is stored, while input and calculations are omitted, helping to reduce size.
 												The innovation in terms of data utilisation is, however, that once a bill becomes irrelevant, it is deleted, rather than kept forever.
 											</p>
-											<p class="how__feature-card">
+											<p class="how__feature-card paragraph2">
 												The mechanism transforms an exponential workload into a linear workload, which saves vast amounts of CPU power.
 											</p>
 										</div>
@@ -283,15 +302,15 @@
 									>
 										<div class="feature-card__internal">
 											<img src="/icons/monetary-policy-icon.png" class="how__icon"/>
-											<h4 class="how__feature-card">Algorithmically Controlled Monetary Policy</h4>
-											<p class="how__feature-card">
+											<h4 class="how__feature-card heading2">Algorithmically Controlled Monetary Policy</h4>
+											<p class="how__feature-card paragraph2">
 												In general, to keep the market stable, a simple modelling of the use of money must be based on internal variables, such as the velocity of
 												money (total velocity of Tagions), adoption level, supply of money, average transaction sizes and more.
 											</p>
-											<p class="how__feature-card">
+											<p class="how__feature-card paragraph2">
 												The model can be used as a measure for demand on liquidity and be the basis for the addition or removal of money, to keep the market stable.
 											</p>
-											<p class="how__feature-card">
+											<p class="how__feature-card paragraph2">
 												On the one side, each transaction fee is burned, decreasing the money supply. On the other - rewards are given to random active nodes.
 												Tagion's algorithm ensures a balance between those two, ensuring a stable value of Tagions.
 											</p>
@@ -299,76 +318,98 @@
 									</div>
 								</div>
 							</div>
-
-
-
-
-
             </div>
           </b-container>
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				<div class="what-where">
           <b-container class="lcontainer">
-						<div class="what-where__left">
-							<div
-								class=""
-								child
-								opacity
-								direction="up"
-							>
-								<h2>
-									<span class="what-where__text">What ...</span>
-								</h2>
+						<div class="what-where__wrapper">
+							<div class="what-where__left">
+								<div
+									class=""
+									child
+									opacity
+									direction="up"
+								>
+									<h2 class="heading1"> What ... </h2>
+								</div>
+								<div
+									class="what-where__summary"
+									child
+									opacity
+									direction="up"
+								>
+									<p class="paragraph1">
+										Tagion is a decentralised and permissionless monetary and banking system – run and owned by its users. Its genuinely fair and democratic
+										governance model builds on the ideas and design principles of Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom.
+										Tagion is self-sustainable and seen as a common resource that lets developers create new financial markets with a few clicks.
+									</p>
+									<p class="paragraph1">
+										The elastic money supply and absence of a hard cap keep the value of the network tokens stable - and in time – Tagion will be a
+										trustless, algorithmically controlled monetary and banking system, that keeps the token price stable. Given all developers,
+										the possibility of creating a more sustainable economic world.
+									</p>
+								</div>
 							</div>
-							<div
-								class="what-where__summary"
-								child
-								opacity
-								direction="up"
-							>
-								<p>
-									Tagion is a decentralised and permissionless monetary and banking system – run and owned by its users. Its genuinely fair and democratic
-									governance model builds on the ideas and design principles of Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom.
-									Tagion is self-sustainable and seen as a common resource that lets developers create new financial markets with a few clicks.
-								</p>
-								<p>
-									The elastic money supply and absence of a hard cap keep the value of the network tokens stable - and in time – Tagion will be a
-									trustless, algorithmically controlled monetary and banking system, that keeps the token price stable. Given all developers,
-									the possibility of creating a more sustainable economic world.
-								</p>
+
+							<div class="what-where__right">
+								<div
+									class=""
+									child
+									opacity
+									direction="up"
+								>
+									<h2 class="heading1"> ... and Where? </h2>
+								</div>
+								<div
+									class="what-where__summary"
+									child
+									opacity
+									direction="up"
+								>
+									<p class="paragraph1">
+										Tagion is a universal token protocol that acts as the backbone for almost any transaction-based service such as C2C cross-border
+										payments and daily micro-transactions and seamlessly exchange between all tokenised currencies.
+									</p>
+									<p class="paragraph1">
+										Finally, Tagion is a vital aid for solving United Nations Sustainable Development Goal 10.c: by 2030, reduce to less than 3% the
+										transaction costs of migrant remittances and eliminate remittance corridors with costs higher than 5%
+									</p>
+								</div>
 							</div>
 						</div>
 
-						<div class="what-where__right">
-							<div
-								class=""
-								child
-								opacity
-								direction="up"
-							>
-								<h2>
-									<span class="what-where__text">... and Where?</span>
-								</h2>
-							</div>
-							<div
-								class="what-where__summary"
-								child
-								opacity
-								direction="up"
-							>
-								<p>
-									Tagion is a universal token protocol that acts as the backbone for almost any transaction-based service such as C2C cross-border
-									payments and daily micro-transactions and seamlessly exchange between all tokenised currencies.
-								</p>
-								<p>
-									Finally, Tagion is a vital aid for solving United Nations Sustainable Development Goal 10.c: by 2030, reduce to less than 3% the
-									transaction costs of migrant remittances and eliminate remittance corridors with costs higher than 5%
-								</p>
-							</div>
-						</div>
           </b-container>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 				<div class="whitepaper">
           <b-container class="lcontainer">
@@ -377,10 +418,10 @@
 						</div>
 
 						<div class="whitepaper__right">
-							<div class="whitepaper__text">White Paper</div>
-							<div class="whitepaper__summary">DEX Protocol. Hashgraph Consensus. DART Database. Inclusive Governance.</div>
+							<h2 class="whitepaper__text heading1">White Paper</h2>
+							<div class="whitepaper__summary paragraph1">DEX Protocol. Hashgraph Consensus. DART Database. Inclusive Governance.</div>
 							<div class="whitepaper__download">
-								<div class="whitepaper__download-text">White Paper</div>
+								<div class="whitepaper__download-text paragraph1">White Paper</div>
 								<div>
 									<button
 										class="whitepaper__download-button"
@@ -396,6 +437,21 @@
 						</div>
           </b-container>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- <div class="lcontainer-wrapper-group lcontainer-wrapper-group--story">
           <div class="lcontainer-wrapper-group__paper">
@@ -689,6 +745,20 @@
           </div>
         </div> -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div
           class="lcontainer-wrapper lcontainer-wrapper--alphanet"
           ref="alphaone"
@@ -700,7 +770,7 @@
                 direction="up"
                 opacity
               >
-                <h2>AlphaOne Network Release</h2>
+                <h2> AlphaOne Network Release </h2>
                 <reveal
                   child
                   direction="up"
@@ -956,6 +1026,15 @@
           </b-container>
         </div> -->
 
+
+
+
+
+
+
+
+
+
         <div class="lcontainer-wrapper lcontainer-wrapper--overflowed mt-10">
           <b-container class="lcontainer lcontainer--roadmap">
             <b-row>
@@ -965,12 +1044,12 @@
                 class="lcontainer__headline-sticky"
               >
                 <div class="lcontainer__headline">
-                  <div
+                  <!-- <div
                     child
                     direction="up"
                     opacity
-                  >
-                    <h2 class="roadmap__heading">Tagion Roadmap</h2>
+                  > -->
+                    <h2 class="heading1"> Tagion Roadmap </h2>
                     <div
                       child
                       direction="up"
@@ -978,17 +1057,17 @@
                       :delay="200"
 											class="roadmap-text"
                     >
-                      <p>The team behind Tagion has spent a significant amount of time, funding itself, while building core components: Hashgraph, Gossip protocol, DART database, HiBON data format, the underlying API and more.</p>
-                      <p>We keep implementing new functionality and getting closer to the major milestone, where we can open-source the Tagion project and launch the main network.</p>
+                      <p class="paragraph1">The team behind Tagion has spent a significant amount of time, funding itself, while building core components: Hashgraph, Gossip protocol, DART database, HiBON data format, the underlying API and more.</p>
+                      <p class="paragraph1">We keep implementing new functionality and getting closer to the major milestone, where we can open-source the Tagion project and launch the main network.</p>
                     </div>
-                  </div>
+                  <!-- </div> -->
                 </div>
               </b-col>
               <b-col xl="6">
                 <div class="timeline">
                   <div>
                     <section class="year">
-                      <h3 class="timeline__year">2015</h3>
+                      <h4 class="timeline__year">2015</h4>
                       <section>
                         <ul>
                           <li class="timeline__heading">Ideation of BitCuits by Carsten Bleser Rasmussen.</li>
@@ -996,7 +1075,7 @@
                       </section>
                     </section>
                     <section class="year">
-                      <h3 class="timeline__year">2017</h3>
+                      <h4 class="timeline__year">2017</h4>
                       <section>
                         <h4 class="timeline__month">July</h4>
                         <ul>
@@ -1011,7 +1090,7 @@
                       </section>
                     </section>
                     <section class="year">
-                      <h3 class="timeline__year">2018</h3>
+                      <h4 class="timeline__year">2018</h4>
                       <section>
                         <h4 class="timeline__month">January</h4>
                         <ul>
@@ -1057,7 +1136,7 @@
                       </section>
                     </section>
                     <section class="year">
-                      <h3 class="timeline__year">2019</h3>
+                      <h4 class="timeline__year">2019</h4>
                       <section>
                         <h4 class="timeline__month">January</h4>
                         <ul>
@@ -1096,7 +1175,7 @@
                       </section>
                     </section>
                     <section class="year">
-                      <h3 class="timeline__year">2020</h3>
+                      <h4 class="timeline__year">2020</h4>
                       <section>
                         <h4 class="timeline__month">June</h4>
                         <ul>
@@ -1117,7 +1196,7 @@
                       </section>
                     </section>
                     <section class="year year--future">
-                      <h3 class="timeline__year">2021</h3>
+                      <h4 class="timeline__year">2021</h4>
                       <section>
                         <h4 class="timeline__month">Q1</h4>
                         <ul>
@@ -1144,88 +1223,98 @@
 
 
 
-			<div class="lcontainer-wrapper lcontainer-wrapper--people">
-				<b-container class="people">
 
-					<div class="people-left">
-						<h2 class="people-left__heading"> The Team Behind Tagion </h2>
 
-						<div>
-							<img src="/icons/line-icon.png" class="people-left__img">
+
+
+
+
+
+
+
+
+				<div class="lcontainer-wrapper lcontainer-wrapper--people">
+					<b-container class="lcontainer people">
+
+						<div class="people-left">
+							<h2 class="heading1"> The Team Behind Tagion </h2>
+
+							<div>
+								<img src="/icons/line-icon.png" class="people-left__img">
+							</div>
+
+							<p class="people-left__text paragraph1">
+								Tagion is an open-source project with members contributing from all over the planet. The company currently
+								funding and developing Tagion, I25s, is located in Denmark and Ukraine. Currently, there are 15+ full-time
+								resources working on the Tagion project.
+							</p>
+
+							<div>
+								<img src="/icons/line-icon.png" class="people-left__img">
+							</div>
 						</div>
 
-						<div class="people-left__text">
-							Tagion is an open-source project with members contributing from all over the planet. The company currently
-							funding and developing Tagion, I25s, is located in Denmark and Ukraine. Currently, there are 15+ full-time
-							resources working on the Tagion project.
-						</div>
+						<div class="people-right">
+							<b-tabs content-class="" class="people-right__b-tabs" align="center">
 
-						<div>
-							<img src="/icons/line-icon.png" class="people-left__img">
-						</div>
-					</div>
-
-					<div class="people-right">
-						<b-tabs content-class="" class="people-right__b-tabs" align="center">
-
-							<b-tab title="Management" active>
-								<reveal class="team-table">
-									<b-row class="row--big-gutter my-4 justify-content-center">
-										<b-col
-											v-for="(teamMember, index) in teamMembers"
-											cols="12"
-										>
-											<reveal
-												child
-												opacity
-												direction="left"
-												:delay="50 * index"
+								<b-tab title="Management" active>
+									<reveal class="team-table">
+										<b-row class="row--big-gutter my-4 justify-content-center">
+											<b-col
+												v-for="(teamMember, index) in teamMembers"
+												cols="12"
 											>
-												<team-card
-													:name="teamMember.name"
-													:title="teamMember.title"
-													:image="teamMember.image"
-													:link="teamMember.link"
-													:about="teamMember.about"
-												></team-card>
-											</reveal>
-										</b-col>
-									</b-row>
-								</reveal>
-							</b-tab>
-
-							<b-tab title="Advisors">
-								<reveal class="team-table">
-									<b-row class="row--big-gutter justify-content-center">
-										<b-col
-											v-for="(teamMember, index) in advisers"
-											cols="12"
-										>
-											<reveal
-												child
-												opacity
-												direction="left"
-												:delay="50 * index"
-											>
-												<team-card
-													:name="teamMember.name"
-													:title="teamMember.title"
-													:image="teamMember.image"
-													:link="teamMember.link"
-													:about="teamMember.about"
+												<reveal
+													child
+													opacity
+													direction="left"
+													:delay="50 * index"
 												>
-												</team-card>
-											</reveal>
-										</b-col>
-									</b-row>
-								</reveal>
-							</b-tab>
+													<team-card
+														:name="teamMember.name"
+														:title="teamMember.title"
+														:image="teamMember.image"
+														:link="teamMember.link"
+														:about="teamMember.about"
+													></team-card>
+												</reveal>
+											</b-col>
+										</b-row>
+									</reveal>
+								</b-tab>
 
-						</b-tabs>
-					</div>
+								<b-tab title="Advisors">
+									<reveal class="team-table">
+										<b-row class="row--big-gutter justify-content-center">
+											<b-col
+												v-for="(teamMember, index) in advisers"
+												cols="12"
+											>
+												<reveal
+													child
+													opacity
+													direction="left"
+													:delay="50 * index"
+												>
+													<team-card
+														:name="teamMember.name"
+														:title="teamMember.title"
+														:image="teamMember.image"
+														:link="teamMember.link"
+														:about="teamMember.about"
+													>
+													</team-card>
+												</reveal>
+											</b-col>
+										</b-row>
+									</reveal>
+								</b-tab>
 
-				</b-container>
-			</div>
+							</b-tabs>
+						</div>
+
+					</b-container>
+				</div>
 
 
 
