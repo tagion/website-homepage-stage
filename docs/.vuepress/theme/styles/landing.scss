@@ -14,7 +14,8 @@
   min-height: 60rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+	align-items: center;
+	padding-top: $header-height;
 }
 
 	.intro__container {
