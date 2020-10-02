@@ -10,12 +10,12 @@
   padding-bottom: 6em;
   box-sizing: border-box;
 	font-size: 0.95em;
-	color: $blue-dark;
+	color: black;
 
   a {
     color: mix($dark, #fff, 80%);
 		opacity: 0.8;
-		color: $blue-dark;
+		color: black;
 
     &:hover {
       opacity: 1;
@@ -25,7 +25,7 @@
 
   p {
 		color: mix($dark, #fff, 60%);
-		color: $blue-dark;
+		color: black;
   }
 
   h6 {
@@ -122,7 +122,7 @@
 
 
 .list-inline-item {
-	color: $blue-dark;
+	color: black;
 	// display: flex;
 	// flex-direction: row;
 
