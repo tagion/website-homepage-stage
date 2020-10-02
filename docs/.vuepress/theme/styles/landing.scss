@@ -114,6 +114,10 @@
 				@include media-breakpoint-down(xl) {
 					margin-top: 2rem;
 				}
+				@include media-breakpoint-down(sm) {
+					flex-direction: column;
+					margin-top: 2rem;
+				}
 			}
 
 			.intro__forms-newsletter {
@@ -174,23 +178,26 @@
 				padding: 0.5rem 1.2rem;
 				color: $blue-light;
 				// margin-right: 2rem;
-				width: 15rem;
+				width: 16rem;
 				border-radius: 0%;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 
 				@include media-breakpoint-down(md) {
-					width: 10rem;
+					width: 12rem;
 				}
 				@include media-breakpoint-down(sm) {
-					width: 7rem;
+					width: 20rem;
+				}
+				@include media-breakpoint-down(xs) {
+					width: 15rem;
 				}
 
 				&.btn-social {
 					height: 3rem;
 					padding: 0.5rem 1.2rem 0.6rem;
-					margin: 0 0.75rem;
+					margin: 0 0.5rem;
 					font-size: 0.9em;
 					background: $blue-dark;
 
@@ -200,7 +207,8 @@
 					}
 
 					@include media-breakpoint-down(md) {
-						font-size: 0.7em;
+						font-size: 0.9rem;
+						margin: 0.5rem;
 					}
 				}
 			}
@@ -2209,14 +2217,14 @@
     margin: 0rem;
     padding-top: 5rem;
     padding-bottom: 4rem;
-    margin: 1rem;
-    margin-top: -4rem;
-    margin-bottom: -2rem;
-    z-index: 15;
+    // margin: 1rem;
+    // margin-top: -4rem;
+    // margin-bottom: -2rem;
+    // z-index: 15;
     position: relative;
     border-radius: 6px;
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
+    // padding-left: 2.4rem;
+    // padding-right: 2.4rem;
 
     h2 {
       font-weight: 500;
