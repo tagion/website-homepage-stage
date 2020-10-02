@@ -124,7 +124,7 @@
 
       </b-row>
 
-      <b-row class="mt-10 align-items-md-center">
+      <b-row class="mt-5 align-items-md-center">
         <b-col cols="12">
           <div class="d-flex align-items-start">
             <!-- <img
@@ -132,7 +132,7 @@
               src="/logo.svg"
               alt="Tagion Logo"
             /> -->
-            <ul class="list-group-transparent list-group-flush list-group-borderless mb-0 text-muted">
+            <ul class="list-group-transparent list-group-flush list-group-borderless mb-0 text-muted pl-0">
 							<div class="list-inline">
 								<div class="list-inline-wrapper-top">
 									<li class="list-inline-item pl-0 pr-4 my-1">© Tagion, 2020. All rights reserved.</li>
