@@ -43,35 +43,32 @@
 						</div>
 
             <div class="intro__forms">
-              <!-- <div class="mt-1"> -->
 								<div class="intro__forms-left">
 									<a
 										href="https://forum.tagion.org/t/new-members-intro-corner/30"
 										target="_blank"
 										class="btn btn-social"
-									>Discuss on Forum</a>
+									>
+										Discuss on Forum
+									</a>
 									<a
 										href="https://t.me/tagionChat"
 										target="_blank"
 										class="btn btn-social"
-									>Chat in Telegram</a>
+									>
+										Chat in Telegram
+									</a>
 									<a
 										@click="scrollToAlphaOne"
-										class="btn btn-social btn-accent"
+										class="btn btn-social"
 									>
 										AlphaOne Network Release
 									</a>
 								</div>
-                <!-- <a
-                  href="https://github.com/tagion/alpha"
-                  target="_blank"
-                  class="btn btn-social btn-accent"
-                >AlphaOne Network Release</a> -->
+
                 <div class="intro__forms-newsletter">
 									<newsletter-form class="mt-4" />
 								</div>
-
-              <!-- </div> -->
             </div>
           </b-container>
         </div>
@@ -1380,6 +1377,11 @@
     </template>
   </layout-default>
 </template>
+
+
+
+
+
 
 <script>
 import LayoutDefault from "@theme/components/layout/LayoutDefault";
