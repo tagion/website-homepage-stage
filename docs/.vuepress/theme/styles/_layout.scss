@@ -201,7 +201,7 @@ body {
   padding-right: 25px;
 
   @include media-breakpoint-up(xs) {
-    max-width: 100%;
+    // max-width: 100%;
   }
 
   @include media-breakpoint-up(lg) {

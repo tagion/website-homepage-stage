@@ -98,60 +98,45 @@
             </div>
 
             <div class="hero__cards feature-cards feature-cards--four">
-              <div class="feature-card">
-                <div
-                  child
-                  opacity
-                  direction="left"
-                >
-                  <div class="feature-card__internal">
-                    <img src="/icons/decentralized-icon.png" />
-                    <h4>Decentralized Exchange</h4>
-                    <p>Pay with anything anywhere. DEX is an open protocol that enables a trustless exchange of any digital currency that supports HTLC (Hash Time Locked Contract).</p>
-                  </div>
-                </div>
-              </div>
 
-              <div class="feature-card">
-                <div
-                  child
-                  opacity
-                  direction="left"
-                >
-                  <div class="feature-card__internal">
-                    <img src="/icons/supply-icon.png" />
-                    <h4>Elastic Money Supply</h4>
-                    <p>To scale properly, the money supply must match demand. Tagion does not have a hard cap, but makes use of elastic supply, which aims to create a stable price level.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="feature-card">
-                <div
-                  child
-                  opacity
-                  direction="left"
-                >
-                  <div class="feature-card__internal">
-                    <img src="/icons/governance-icon.png" />
-                    <h4>Inclusive Governance</h4>
-                    <p>Tagion and its resources are governed as a Common. All have equal right to participate, but it is the contribution which gives reward and power.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="feature-card">
-                <div
-                  child
-                  opacity
-                  direction="left"
-                >
-                  <div class="feature-card__internal">
-                    <img src="/icons/technology-icon.png" />
-                    <h4>Scalable Core Technology</h4>
-                    <p>Tagion builds on a modular and scalable core. Each module can be changed and optimised. The main modules comprise of the distributed database, scripting engine, Hashgraph and gossip mechanism.</p>
-                  </div>
-                </div>
-              </div>
+							<div class="hero__cards-first">
+								<div class="hero__feature-card__left">
+									<div class="hero__feature-card__internal">
+										<img src="/icons/decentralized-icon.png" />
+										<h4>Decentralized Exchange</h4>
+										<p>Pay with anything anywhere. DEX is an open protocol that enables a trustless exchange of any digital currency that supports HTLC (Hash Time Locked Contract).</p>
+									</div>
+								</div>
+
+								<div class="hero__feature-card__right">
+									<div class="hero__feature-card__internal">
+										<img src="/icons/supply-icon.png" />
+										<h4>Elastic Money Supply</h4>
+										<p>To scale properly, the money supply must match demand. Tagion does not have a hard cap, but makes use of elastic supply, which aims to create a stable price level.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="hero__cards-second">
+								<div class="hero__feature-card__left">
+									<div class="hero__feature-card__internal">
+										<img src="/icons/governance-icon.png" />
+										<h4>Inclusive Governance</h4>
+										<p>Tagion and its resources are governed as a Common. All have equal right to participate, but it is the contribution which gives reward and power.</p>
+									</div>
+								</div>
+
+								<div class="hero__feature-card__right">
+									<div class="hero__feature-card__internal">
+										<img src="/icons/technology-icon.png" />
+										<h4>Scalable Core Technology</h4>
+										<p>Tagion builds on a modular and scalable core. Each module can be changed and optimised. The main modules comprise of the distributed database, scripting engine, Hashgraph and gossip mechanism.</p>
+									</div>
+								</div>
+							</div>
+
             </div>
+
           </b-container>
         </div>
 
@@ -180,130 +165,145 @@
             </div>
 
             <div class="how__cards feature-cards feature-cards--four">
-              <div class="feature-card">
-                <div
-                  child
-                  opacity
-                  direction="left"
-                >
-                  <div class="feature-card__internal">
-                    <img src="/icons/network-throughput-icon.png" class="how__icon"/>
-                    <h4 class="how__feature-card">Network Throughput</h4>
-										<p class="how__feature-card">
-											Tagion uses hashgraph for consensus, which in the Tagion implementation, makes it possible to process more than 20.000
-											transactions per second per shard. In comparison, VISA does around 1,700 transactions per second on average.
-										</p>
-										<p class="how__feature-card">
-											Tagion is architected to be able to scale to hundreds of Shards that operate in tandem without loss of efficiency
-										</p>
-                  </div>
-                </div>
-              </div>
+							<div class="how__cards-first-column">
+								<div class="feature-card feature-card__left">
+									<div
+										child
+										opacity
+										direction="left"
+									>
+										<div class="feature-card__internal">
+											<img src="/icons/network-throughput-icon.png" class="how__icon"/>
+											<h4 class="how__feature-card">Network Throughput</h4>
+											<p class="how__feature-card">
+												Tagion uses hashgraph for consensus, which in the Tagion implementation, makes it possible to process more than 20.000
+												transactions per second per shard. In comparison, VISA does around 1,700 transactions per second on average.
+											</p>
+											<p class="how__feature-card">
+												Tagion is architected to be able to scale to hundreds of Shards that operate in tandem without loss of efficiency
+											</p>
+										</div>
+									</div>
+								</div>
 
-              <div class="feature-card">
-                <div
-                  child
-                  opacity
-                  direction="left"
-                >
-                  <div class="feature-card__internal">
-                    <img src="/icons/scalability-icon.png" class="how__icon"/>
-                    <h4 class="how__feature-card">Scalability</h4>
-                    <p class="how__feature-card">
-											Combining Tagion DEX with DART provides Tagion with the speed and scalability needed to become an underlying network for any everyday financial services.
-										</p>
-                  </div>
-                </div>
-              </div>
-              <div class="feature-card">
-                <div
-                  child
-                  opacity
-                  direction="left"
-                >
-                  <div class="feature-card__internal">
-                    <img src="/icons/speed-of-transaction-icon.png" class="how__icon"/>
-                    <h4 class="how__feature-card">Speed of Transaction</h4>
-                    <p class="how__feature-card">
-											Transactions on Tagion are validated in between two or three seconds, placing it on par with major credit card operators in terms of validation speed.
-										</p>
-										<p class="how__feature-card">
-											A fast validation time is reached through the use of Hashgraph for consensus and an efficient (Patent Pending) gossip Mechanism.
-											The Hashgraph algorithm and the accompanying mathematical proof was initially discovered by Leemon Baird.
-										</p>
-										<p class="how__feature-card">
-											The algorithm ensures that all nodes, infinite time, reach the same order of events - as long as more than two-thirds of the nodes in the network
-											follow the same consensus rules. In doing so, the nodes confirm and validate any action on the network, such as a money transfer,
-											money exchange, or data interactions.
-										</p>
-										<p class="how__feature-card">
-											The gossip mechanisms optimise data exchange between nodes to happen most efficiently.
-										</p>
-                  </div>
-                </div>
-              </div>
-              <div class="feature-card">
-                <div
-                  child
-                  opacity
-                  direction="left"
-                >
-                  <div class="feature-card__internal">
-                    <img src="/icons/market-liquidity-icon.png" class="how__icon"/>
-                    <h4 class="how__feature-card">Market Liquidity</h4>
-                    <p class="how__feature-card">
-											Better market liquidity results in a more efficient market. With Tagions as an intermediate currency, it is possible to exchange all tokenised currencies
-											seamlessly. By pairing all alien currencies with Tagions, the resulting reduction of currency pairs enables a simpler market with higher liquidity.
-										</p>
-                  </div>
-                </div>
-              </div>
-							<div class="feature-card">
-                <div
-                  child
-                  opacity
-                  direction="left"
-                >
-                  <div class="feature-card__internal">
-                    <img src="/icons/storage-power-icon.png" class="how__icon"/>
-                    <h4 class="how__feature-card">Storage and Computial power</h4>
-                    <p class="how__feature-card">
-											Most DLTs use a decentralised, immutable database for storage. The blockchain data structure is immutable, meaning all data should be stored forever.
-										</p>
-										<p class="how__feature-card">
-											Tagion uses a distributed database for storage, meaning a node only stores a part of the data. DART (Distributed Archive of Random Transactions)
-											gives away with immutability, and only the output of a transaction is stored, while input and calculations are omitted, helping to reduce size.
-											The innovation in terms of data utilisation is, however, that once a bill becomes irrelevant, it is deleted, rather than kept forever.
-										</p>
-										<p class="how__feature-card">
-											The mechanism transforms an exponential workload into a linear workload, which saves vast amounts of CPU power.
-										</p>
-                  </div>
-                </div>
-              </div>
-							<div class="feature-card">
-                <div
-                  child
-                  opacity
-                  direction="left"
-                >
-                  <div class="feature-card__internal">
-                    <img src="/icons/monetary-policy-icon.png" class="how__icon"/>
-                    <h4 class="how__feature-card">Algorithmically Controlled Monetary Policy</h4>
-                    <p class="how__feature-card">
-											In general, to keep the market stable, a simple modelling of the use of money must be based on internal variables, such as the velocity of
-											money (total velocity of Tagions), adoption level, supply of money, average transaction sizes and more.
-										</p>
-										<p class="how__feature-card">
-											The model can be used as a measure for demand on liquidity and be the basis for the addition or removal of money, to keep the market stable.
-										</p>
-										<p class="how__feature-card">
-											On the one side, each transaction fee is burned, decreasing the money supply. On the other - rewards are given to random active nodes.
-											Tagion's algorithm ensures a balance between those two, ensuring a stable value of Tagions.
-										</p>
-                  </div>
-                </div>
-              </div>
+								<div class="feature-card feature-card__right">
+									<div
+										child
+										opacity
+										direction="left"
+									>
+										<div class="feature-card__internal">
+											<img src="/icons/scalability-icon.png" class="how__icon"/>
+											<h4 class="how__feature-card">Scalability</h4>
+											<p class="how__feature-card">
+												Combining Tagion DEX with DART provides Tagion with the speed and scalability needed to become an underlying network for any everyday financial services.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="how__cards-second-column">
+								<div class="feature-card feature-card__left">
+									<div
+										child
+										opacity
+										direction="left"
+									>
+										<div class="feature-card__internal">
+											<img src="/icons/speed-of-transaction-icon.png" class="how__icon"/>
+											<h4 class="how__feature-card">Speed of Transaction</h4>
+											<p class="how__feature-card">
+												Transactions on Tagion are validated in between two or three seconds, placing it on par with major credit card operators in terms of validation speed.
+											</p>
+											<p class="how__feature-card">
+												A fast validation time is reached through the use of Hashgraph for consensus and an efficient (Patent Pending) gossip Mechanism.
+												The Hashgraph algorithm and the accompanying mathematical proof was initially discovered by Leemon Baird.
+											</p>
+											<p class="how__feature-card">
+												The algorithm ensures that all nodes, infinite time, reach the same order of events - as long as more than two-thirds of the nodes in the network
+												follow the same consensus rules. In doing so, the nodes confirm and validate any action on the network, such as a money transfer,
+												money exchange, or data interactions.
+											</p>
+											<p class="how__feature-card">
+												The gossip mechanisms optimise data exchange between nodes to happen most efficiently.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="feature-card feature-card__right">
+									<div
+										child
+										opacity
+										direction="left"
+									>
+										<div class="feature-card__internal">
+											<img src="/icons/market-liquidity-icon.png" class="how__icon"/>
+											<h4 class="how__feature-card">Market Liquidity</h4>
+											<p class="how__feature-card">
+												Better market liquidity results in a more efficient market. With Tagions as an intermediate currency, it is possible to exchange all tokenised currencies
+												seamlessly. By pairing all alien currencies with Tagions, the resulting reduction of currency pairs enables a simpler market with higher liquidity.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="how__cards-third-column">
+								<div class="feature-card feature-card__left">
+									<div
+										child
+										opacity
+										direction="left"
+									>
+										<div class="feature-card__internal">
+											<img src="/icons/storage-power-icon.png" class="how__icon"/>
+											<h4 class="how__feature-card">Storage and Computial power</h4>
+											<p class="how__feature-card">
+												Most DLTs use a decentralised, immutable database for storage. The blockchain data structure is immutable, meaning all data should be stored forever.
+											</p>
+											<p class="how__feature-card">
+												Tagion uses a distributed database for storage, meaning a node only stores a part of the data. DART (Distributed Archive of Random Transactions)
+												gives away with immutability, and only the output of a transaction is stored, while input and calculations are omitted, helping to reduce size.
+												The innovation in terms of data utilisation is, however, that once a bill becomes irrelevant, it is deleted, rather than kept forever.
+											</p>
+											<p class="how__feature-card">
+												The mechanism transforms an exponential workload into a linear workload, which saves vast amounts of CPU power.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="feature-card feature-card__right">
+									<div
+										child
+										opacity
+										direction="left"
+									>
+										<div class="feature-card__internal">
+											<img src="/icons/monetary-policy-icon.png" class="how__icon"/>
+											<h4 class="how__feature-card">Algorithmically Controlled Monetary Policy</h4>
+											<p class="how__feature-card">
+												In general, to keep the market stable, a simple modelling of the use of money must be based on internal variables, such as the velocity of
+												money (total velocity of Tagions), adoption level, supply of money, average transaction sizes and more.
+											</p>
+											<p class="how__feature-card">
+												The model can be used as a measure for demand on liquidity and be the basis for the addition or removal of money, to keep the market stable.
+											</p>
+											<p class="how__feature-card">
+												On the one side, each transaction fee is burned, decreasing the money supply. On the other - rewards are given to random active nodes.
+												Tagion's algorithm ensures a balance between those two, ensuring a stable value of Tagions.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+
             </div>
           </b-container>
         </div>
@@ -348,7 +348,7 @@
 								direction="up"
 							>
 								<h2>
-									<span class="what-where__text">and Where?</span>
+									<span class="what-where__text">... and Where?</span>
 								</h2>
 							</div>
 							<div
@@ -728,6 +728,7 @@
             </reveal>
             <reveal>
               <div class="hero__cards feature-cards feature-cards--six">
+
                 <div class="feature-card">
                   <reveal
                     child
@@ -742,6 +743,7 @@
                     </div>
                   </reveal>
                 </div>
+
                 <div class="feature-card">
                   <reveal
                     child
@@ -756,6 +758,7 @@
                     </div>
                   </reveal>
                 </div>
+
                 <div class="feature-card">
                   <reveal
                     child
@@ -770,6 +773,7 @@
                     </div>
                   </reveal>
                 </div>
+
                 <div class="feature-card">
                   <reveal
                     child
@@ -784,6 +788,7 @@
                     </div>
                   </reveal>
                 </div>
+
                 <div class="feature-card">
                   <reveal
                     child
@@ -799,6 +804,7 @@
                     </div>
                   </reveal>
                 </div>
+
                 <div class="feature-card">
                   <reveal
                     child
@@ -815,6 +821,7 @@
                     </div>
                   </reveal>
                 </div>
+
               </div>
               <div class="lcontainer-extra-information">
                 <reveal

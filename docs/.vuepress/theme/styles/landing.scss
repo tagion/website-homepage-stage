@@ -388,7 +388,7 @@
   .hero__summary {
     p {
       margin-top: 0;
-      margin-bottom: 2rem;
+      // margin-bottom: 2rem;
       max-width: 30rem;
       // font-size: 1.2em;
       margin-left: 0.1rem;
@@ -414,12 +414,65 @@
     position: relative;
     z-index: 2;
     margin-top: 3rem;
-    margin-bottom: 4.4rem;
+		margin-bottom: 4.4rem;
+		display: flex;
+		flex-direction: column;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       margin-top: 1.4rem;
       margin-bottom: 0.4rem;
-    }
+		}
+
+		.hero__feature-card__left {
+			padding-right: 1rem;
+			width: 50%;
+			margin: 1rem 0;
+
+			@include media-breakpoint-down(md) {
+				width: 100%;
+				padding-right: 0;
+			}
+		}
+
+		.hero__feature-card__right {
+			padding-left: 1rem;
+			width: 50%;
+			margin: 1rem 0;
+
+			@include media-breakpoint-down(md) {
+				width: 100%;
+				padding-left: 0;
+			}
+		}
+
+		.hero__cards-first {
+			display: flex;
+			flex-direction: row;
+
+			@include media-breakpoint-down(md) {
+				flex-direction: column;
+			}
+		}
+
+		.hero__cards-second {
+			display: flex;
+			flex-direction: row;
+
+			@include media-breakpoint-down(md) {
+				flex-direction: column;
+			}
+		}
+
+		.hero__feature-card__internal {
+			img {
+				padding: 0.5rem 0;
+			}
+
+			h4 {
+				padding: 0.5rem 0;
+				font-weight: 600;
+			}
+		}
   }
 
   .lcontainer {
@@ -640,16 +693,43 @@
 		text-align: justify;
 	}
 
+	.feature-card__left {
+		padding-right: 1rem;
+
+		@include media-breakpoint-down(md) {
+			padding-right: 0;
+		}
+	}
+
+	.feature-card__right {
+		padding-left: 1rem;
+
+		@include media-breakpoint-down(md) {
+			padding-left: 0;
+		}
+	}
+
   .how__cards {
     position: relative;
     z-index: 2;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+		margin-bottom: 2rem;
+		display: flex;
+		flex-direction: column;
 
     @include media-breakpoint-down(sm) {
       margin-top: 1.4rem;
       margin-bottom: 0.4rem;
-    }
+		}
+
+		.how__cards-first-column, .how__cards-second-column, .how__cards-third-column {
+			display: flex;
+			flex-direction: row;
+
+			@include media-breakpoint-down(md) {
+				flex-direction: column;
+			}
+		}
 	}
 
 	.how__icon {
@@ -1398,7 +1478,11 @@
     }
 
     .feature-card__internal {
-      padding: 0.5rem 1rem;
+			padding: 0.5rem 0;
+
+			@include media-breakpoint-down(md) {
+        padding-right: 0;
+      }
 
       // &::after {
       //   content: "";
