@@ -1,0 +1,217 @@
+@import "./config";
+@import "./type";
+@import "node_modules/bootstrap/scss/mixins";
+
+
+
+.intro {
+  background: $white;
+	padding-top: $header-height;
+}
+
+	.intro-content {
+		display: flex;
+		flex-direction: row;
+
+		@include media-breakpoint-down(xl) {
+			flex-direction: column;
+		}
+	}
+
+		.intro-content-left {
+			display: flex;
+			flex-direction: column;
+
+			width: 50%;
+			margin-right: 2rem;
+
+			@include media-breakpoint-down(xl) {
+				width: 100%;
+				margin-right: 0;
+			}
+		}
+
+			.intro-content-left-quote {
+				padding-top: 2rem;
+				color: $blue-light;
+
+				@include media-breakpoint-down(xl) {
+					padding-top: 1.5rem;
+				}
+				@include media-breakpoint-down(lg) {
+					padding-top: 1rem;
+				}
+			}
+
+			.intro-content-left-summary {
+				color: $blue-dark;
+				text-align: left;
+				margin: 1rem 0;
+
+				@include media-breakpoint-down(xl) {
+					margin: 1.5rem 0;
+				}
+				@include media-breakpoint-down(lg) {
+					margin: 1rem 0;
+				}
+			}
+
+		.intro-content-right {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			width: 50%;
+			background-color: lightblue;
+			margin-top: 2rem;
+			margin-left: 2rem;
+			background-color: $white;
+
+			@include media-breakpoint-down(xl) {
+				width: 100%;
+				margin-top: 0;
+				margin-left: 0;
+			}
+		}
+
+			.intro-content-right__video-wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: $white;
+
+				width: $youtube-width;
+				height: $youtube-height;
+
+				@include media-breakpoint-down(xl) {
+					width: $youtube-width-xl;
+					height: $youtube-height-xl;
+				}
+				@include media-breakpoint-down(lg) {
+					width: $youtube-width-lg;
+					height: $youtube-height-lg;
+				}
+				@include media-breakpoint-down(md) {
+					width: $youtube-width-md;
+					height: $youtube-height-md;
+				}
+				@include media-breakpoint-down(sm) {
+					width: $youtube-width-sm;
+					height: $youtube-height-sm;
+				}
+			}
+
+	.intro-buttons {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 1rem;
+
+		@include media-breakpoint-down(xl) {
+			flex-direction: column;
+		}
+
+		.intro-buttons-left {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			@include media-breakpoint-down(xl) {
+				margin-top: 2rem;
+			}
+			@include media-breakpoint-down(sm) {
+				flex-direction: column;
+				margin-top: 1rem;
+			}
+		}
+
+		.intro-buttons-newsletter {
+
+			.newsletter-wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				@include media-breakpoint-down(md) {
+					flex-direction: column;
+				}
+			}
+
+			& .email-field {
+				width: 30rem;
+				border: 1px solid $blue-light;
+				border-radius: 0%;
+				height: 3rem;
+				color: $blue-dark;
+
+				@include media-breakpoint-down(md) {
+					width: 20rem;
+				}
+				@include media-breakpoint-down(xs) {
+					width: 15rem;
+				}
+
+				&:focus {
+					box-shadow: none;
+					background-color: $blue-light;
+					color: $blue-dark;
+				}
+			}
+
+			& .input-group-append__button {
+				width: 15rem;
+				color: $blue-light;
+				background-color: $blue-dark;
+				border-radius: none;
+				height: 3rem;
+
+				@include media-breakpoint-down(md) {
+					width: 20rem;
+				}
+				@include media-breakpoint-down(xs) {
+					width: 15rem;
+				}
+
+				&:hover {
+					background-color: $blue-light;
+					color: $blue-dark;
+				}
+			}
+		}
+
+	}
+
+		.intro-buttons .btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			width: 16rem;
+			height: 3rem;
+
+			margin: 0 0.5rem;
+			padding: 0.5rem 1.2rem;
+
+			color: $blue-light;
+			background-color: $blue-dark;
+
+			font-size: 0.9em;
+			border-radius: 0%;
+
+			@include media-breakpoint-down(md) {
+				width: 12rem;
+				font-size: 0.9rem;
+				margin: 0.5rem;
+			}
+			@include media-breakpoint-down(sm) {
+				width: 20rem;
+			}
+			@include media-breakpoint-down(xs) {
+				width: 15rem;
+			}
+
+			&:hover {
+				background-color: $blue-light;
+				color: $blue-dark;
+			}
+		}

@@ -1,0 +1,38 @@
+@import "./config";
+@import "./type";
+@import "node_modules/bootstrap/scss/mixins";
+
+
+
+
+.timeline {
+
+	.year {
+
+		.timeline__year {
+			color: $blue-dark;
+			font-weight: 400;
+			position: relative;
+			top: 13px;
+			right: 15px;
+		}
+
+		.timeline__month {
+			color: $blue-light;
+			// position: relative;
+			// top: 30px;
+			// right: 20px;
+		}
+	}
+}
+
+
+.roadmap-text {
+	width: 100%;
+	color: $blue-dark;
+}
+
+.timeline__heading {
+	color: $blue-dark;
+	font-weight: 500;
+}

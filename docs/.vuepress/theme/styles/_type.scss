@@ -1,3 +1,5 @@
+@import "node_modules/bootstrap/scss/mixins";
+
 @mixin headline-margin($var) {
   margin-top: calc(-1 * (#{$header-height} - #{$var}));
 }
@@ -327,4 +329,104 @@ b {
     clear: both;
     display: table;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+	font-size: 4rem;
+	font-weight: 600;
+	color: $blue-dark;
+
+	@include media-breakpoint-down(xl) {
+		font-size: 3rem;
+	}
+	@include media-breakpoint-down(lg) {
+		font-size: 2.5rem;
+	}
+	@include media-breakpoint-down(md) {
+		font-size: 2.25rem;
+	}
+	@include media-breakpoint-down(sm) {
+		font-size: 2rem;
+	}
+	@include media-breakpoint-down(xs) {
+		font-size: 1.5rem;
+	}
+}
+
+h2 {
+	font-size: 3.5rem;
+	font-weight: 600;
+	color: $blue-dark;
+
+	@include media-breakpoint-down(xl) {
+		font-size: 2.8rem;
+	}
+	@include media-breakpoint-down(lg) {
+		font-size: 2.3rem;
+	}
+	@include media-breakpoint-down(md) {
+		font-size: 2rem;
+	}
+	@include media-breakpoint-down(sm) {
+		font-size: 1.75rem;
+	}
+	@include media-breakpoint-down(xs) {
+		font-size: 1.4rem;
+	}
+}
+
+h4 {
+	font-size: 2.25rem;
+	font-weight: 400;
+	color: $blue-dark;
+
+	@include media-breakpoint-down(xl) {
+		font-size: 1.75rem;
+	}
+	@include media-breakpoint-down(lg) {
+		font-size: 1.5rem;
+	}
+	@include media-breakpoint-down(md) {
+		font-size: 1.3rem;
+	}
+	@include media-breakpoint-down(sm) {
+		font-size: 1.1rem;
+	}
+	@include media-breakpoint-down(xs) {
+		font-size: 1rem;
+	}
+}
+
+.paragraph1 {
+	font-size: 1.25rem;
+	font-weight: 400;
+	color: #222;
+
+	@include media-breakpoint-down(lg) {
+		font-size: 1rem;
+	}
+}
+
+.paragraph2 {
+	font-size: 1rem;
+	font-weight: 300;
+	color: #222;
+
+	@include media-breakpoint-down(lg) {
+		font-size: 0.9rem;
+	}
 }

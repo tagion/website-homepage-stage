@@ -1221,3 +1221,19 @@ $media-player-icon-box-shadow: 0 0 2.5rem rgba($gray-600, 0.3) !default;
 $media-player-transition: all $transition-timing-sm $transition-function !default;
 $media-player-icon-transition: all $transition-timing $transition-function !default;
 $media-viewer-icon-transition: $transition-timing $transition-function !default;
+
+// Embed video in Intro section
+$youtube-width: 644px;
+$youtube-height: 362px;
+
+$youtube-width-xl: $youtube-width * 1.4;
+$youtube-height-xl: $youtube-height * 1.4;
+
+$youtube-width-lg: $youtube-width * 1.2;
+$youtube-height-lg: $youtube-height * 1.2;
+
+$youtube-width-md: $youtube-width * 0.9;
+$youtube-height-md: $youtube-height * 0.9;
+
+$youtube-width-sm: $youtube-width * 0.6;
+$youtube-height-sm: $youtube-height * 0.6;
