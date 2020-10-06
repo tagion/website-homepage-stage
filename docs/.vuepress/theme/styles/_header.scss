@@ -62,7 +62,7 @@
       }
 
       &:hover {
-        opacity: 0.7;
+				opacity: 0.7;
 
         &::after {
           left: 40%;
@@ -81,7 +81,6 @@
 
       &.router-link-active {
         opacity: 1;
-        color: mix($primary, #fff, 90%);
 
         &::after {
           left: 40%;

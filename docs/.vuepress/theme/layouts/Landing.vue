@@ -16,7 +16,7 @@
 
 				<WhitePaperComponent></WhitePaperComponent>
 
-				<AlphaOneComponent></AlphaOneComponent>
+				<AlphaOneComponent id="content"></AlphaOneComponent>
 
 				<RoadmapComponent></RoadmapComponent>
 
@@ -623,6 +623,11 @@
 
 	import { isMobile } from "@theme/util";
 	import { teamMembers, advisers } from "@theme/data";
+
+	import Vue from 'vue';
+	import VueSmoothScroll from 'vue2-smooth-scroll';
+
+	Vue.use(VueSmoothScroll, { duration: 400, updateHistory: false, });
 
 	export default {
 		data() {

@@ -29,7 +29,7 @@
 				<a href="https://t.me/tagionChat" target="_blank" class="btn btn_redirect">
 					Chat in Telegram
 				</a>
-				<a @click="scrollToAlphaOne" class="btn btn_scroll">
+				<a href="#content" v-smooth-scroll class="btn btn_scroll">
 					AlphaOne Release
 				</a>
 			</div>
@@ -48,11 +48,11 @@
 		components: {
 			NewsletterForm,
 		},
-		methods: {
-			scrollToAlphaOne() {
-				this.$scrollTo(this.$refs["alphaone"]);
-			},
-		},
+		// methods: {
+		// 	scrollToAlphaOne() {
+		// 		this.$scrollTo(this.$refs["alphaone"]);
+		// 	},
+		// },
 	};
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-	<div class="alphanet" ref="alphaone">
+	<div class="alphanet">
 		<b-container>
 			<div class="alphanet-heading">
 				<h2> AlphaOne Network Release </h2>
