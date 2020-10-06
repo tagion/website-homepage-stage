@@ -13,7 +13,7 @@
       class="t-form"
       :class="{'t-form--dark': !!dark}"
     >
-      <b-input-group size="sm" pill class="newsletter-wrapper">
+      <div class="newsletter-wrapper">
         <b-input
           class="email-field"
           type="email"
@@ -26,12 +26,12 @@
           @input="value => onInput(value)"
           required
         />
-        <div class="input-group-append">
+        <!-- <div class="input-group-append"> -->
           <b-button
             :type="!inputDisabled ? 'submit' : ''"
             :class="{disabled: inputDisabled}"
             :disabled="inputDisabled"
-						class="input-group-append__button"
+						class="btn btn_redirect"
             aria-label="Subscribe"
           >
             <span v-if="emailProgress">
@@ -39,12 +39,12 @@
               <span class="d-none d-md-inline">Subscribing...</span>
             </span>
             <span v-else>
-              <span class="fas fa-envelope"></span>
+              <span class=""></span>
               <span>Join Newsletter</span>
             </span>
           </b-button>
-        </div>
-      </b-input-group>
+        <!-- </div> -->
+      </div>
       <b-form-text text-variant="danger" v-if="!emailSent">{{emailError}}&nbsp;</b-form-text>
       <b-form-text text-variant="success" v-if="emailSent">Verification code is sent to your email.</b-form-text>
     </b-form>

@@ -7,15 +7,14 @@
     class="brand-button"
     :class="{['brand-button--'+variant]: true}"
   >
-    <span class="brand-button__wrapper">
-      <span class="brand-button__icon"></span>
-    </span>
-    <span :scroll-reveal-child="reveal" scroll-reveal-opacity scroll-reveal-right data-reveal-delay="250">
-      <div class="brand-button__text">
-        <slot />
-      </div>
-    </span>
+    <div class="brand-button__wrapper">
+      <div class="brand-button__icon"></div>
+    </div>
+		<div class="brand-button__text">
+			<slot />
+		</div>
   </router-link>
+
   <a
     v-else
     @click="$emit('click')"
@@ -24,14 +23,12 @@
     class="brand-button"
     :class="{['brand-button--'+variant]: true}"
   >
-    <span class="brand-button__wrapper">
-      <span class="brand-button__icon"></span>
-    </span>
-    <span :scroll-reveal-child="reveal" scroll-reveal-opacity scroll-reveal-right data-reveal-delay="250">
-      <div class="brand-button__text">
-        <slot />
-      </div>
-    </span>
+    <div class="brand-button__wrapper">
+      <div class="brand-button__icon"></div>
+    </div>
+		<div class="brand-button__text">
+			<slot />
+		</div>
   </a>
 </template>
 
@@ -40,3 +37,5 @@ export default {
   props: ["variant", "reveal", "to", "href", "bottom"]
 };
 </script>
+
+<style src="../../styles/brand-button-component.scss" lang="scss"></style>

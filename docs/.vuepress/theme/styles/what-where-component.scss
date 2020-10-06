@@ -1,0 +1,225 @@
+@import "./config";
+@import "./type";
+@import "node_modules/bootstrap/scss/mixins";
+
+
+
+
+
+
+.what-where {
+	background-color: $blue-light;
+	color: $white;
+
+  display: flex;
+  justify-content: center;
+	align-items: center;
+
+	.what-where__wrapper {
+		display: flex;
+		flex-direction: row;
+
+		@include media-breakpoint-down(md) {
+			flex-direction: column;
+		}
+	}
+
+		.what-where__left, .what-where__right {
+			width: 50%;
+
+			@include media-breakpoint-down(md) {
+				width: 100%;
+			}
+
+			h2 {
+				color: white;
+			}
+		}
+
+		.what-where__left {
+			margin-right: 1rem;
+
+			@include media-breakpoint-down(md) {
+				margin-right: 0;
+			}
+		}
+
+		.what-where__right {
+			margin-left: 1rem;
+
+			@include media-breakpoint-down(md) {
+				margin-left: 0;
+			}
+		}
+
+  .what-where__details {
+    margin-top: -1rem;
+
+    // p {
+    //   // opacity: 0.8;
+    //   font-style: italic;
+    // }
+
+    .what-where__details-summary-button {
+      display: inline-block;
+      margin-bottom: 3rem;
+    }
+
+    // .brand-button {
+    //   color: $primary;
+
+    //   .brand-button__text {
+    //     color: $primary;
+    //   }
+    // }
+
+    .btn {
+      padding: 0.5rem 1.2rem;
+      color: #fff;
+      // border-radius: 100px;
+
+      &.btn-summary {
+        margin-right: 1rem;
+      }
+
+      &.btn-social {
+        padding: 0.5rem 1.2rem 0.6rem;
+        margin-right: 0.8rem;
+        margin-top: 1rem;
+        font-size: 0.9em;
+        background: $primary-lightest;
+
+        &:hover {
+          background: $primary;
+        }
+
+        @include media-breakpoint-down(md) {
+          font-size: 0.8em;
+        }
+      }
+
+      &.btn-accent {
+        background: $secondary;
+
+        &:hover {
+          background: $secondary-darkest;
+        }
+      }
+
+      svg {
+        width: 1rem;
+        margin-right: 1rem;
+        color: #fff;
+      }
+
+      &.btn-reddit,
+      &.btn-telegram {
+        opacity: 0.8;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &.btn-reddit {
+        &:hover {
+          background: #ff4500;
+        }
+
+        svg {
+          position: relative;
+          top: -2px;
+        }
+      }
+      &.btn-telegram {
+        &:hover {
+          background: #0088cc;
+        }
+
+        svg {
+          position: relative;
+          top: -2px;
+        }
+      }
+    }
+  }
+
+  .what-where__join-note {
+    margin-bottom: 0.3rem;
+    display: inline-block;
+    margin-left: 0.2rem;
+  }
+
+  // .what-where__quote {
+  //   position: relative;
+	// 	font-weight: 400;
+	// 	max-width: 30rem;
+
+  //   h2 {
+  //     font-weight: 500;
+  //     line-height: 1.4;
+	// 		margin-bottom: 0.1em;
+	// 		color: white;
+	// 		font-size: 2.5rem;
+
+	// 		@include media-breakpoint-down(lg) {
+	// 			font-size: 2rem;
+	// 		}
+  //     @include media-breakpoint-down(md) {
+  //       font-size: 1.75rem;
+  //     }
+  //     @include media-breakpoint-down(sm) {
+  //       font-size: 1.5rem;
+  //     }
+  //     @include media-breakpoint-down(xs) {
+  //       font-size: 1.25rem;
+  //       // line-height: 1.3;
+  //       margin-bottom: 0.3em;
+  //     }
+  //   }
+
+  //   .what-where__quote-muted {
+  //     color: $primary-darker;
+  //     font-weight: 600;
+  //     opacity: 0.6;
+  //   }
+
+  //   .what-where__quote-accent {
+  //     color: $primary-darker;
+  //     font-weight: 600;
+  //   }
+
+  //   @include media-breakpoint-down(md) {
+  //     max-width: 90%;
+  //   }
+	// }
+
+  .what-where__summary {
+    p {
+      margin-top: 0;
+      margin-left: 0.1rem;
+			text-align: left;
+			color: white;
+    }
+	}
+
+  .what-where__cards {
+    position: relative;
+    z-index: 2;
+    margin-top: 3rem;
+    margin-bottom: 4.4rem;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 1.4rem;
+      margin-bottom: 0.4rem;
+    }
+	}
+
+	.what-where__icon {
+		width: 48px;
+		height: 48px;
+		margin: 0;
+	}
+}
+
+
+

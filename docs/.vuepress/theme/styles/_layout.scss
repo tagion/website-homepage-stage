@@ -198,11 +198,14 @@ body {
 // Container
 //
 .container {
-  padding-left: 25px;
-  padding-right: 25px;
+	padding: 2rem 3rem;
 
-  @include media-breakpoint-up(xs) {
-    // max-width: 100%;
+  // @include media-breakpoint-up(xs) {
+  //   max-width: $xs;
+	// }
+
+	@include media-breakpoint-up(md) {
+    max-width: $md;
   }
 
   @include media-breakpoint-up(lg) {
@@ -218,13 +221,13 @@ body {
   }
 
   @include media-breakpoint-down(md) {
-    padding-left: 25px;
-    padding-right: 25px;
+    // padding-left: 25px;
+    // padding-right: 25px;
   }
 
   @include media-breakpoint-down(sm) {
-    padding-left: 15px;
-    padding-right: 15px;
+    // padding-left: 15px;
+    // padding-right: 15px;
   }
 }
 

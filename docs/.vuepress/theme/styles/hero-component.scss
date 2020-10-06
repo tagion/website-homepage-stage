@@ -1,0 +1,92 @@
+@import "./config";
+@import "./type";
+@import "node_modules/bootstrap/scss/mixins";
+
+
+
+
+.hero {
+	background-color: $blue-dark;
+}
+
+	.hero h2 {
+		color: $white;
+	}
+
+	.hero p {
+		color: $white;
+		text-align: left;
+		max-width: 30rem;
+
+		@include media-breakpoint-down(xl) {
+			max-width: 20rem;
+		}
+		@include media-breakpoint-down(lg) {
+			max-width: 17rem;
+		}
+		@include media-breakpoint-down(md) {
+			max-width: 100%;
+		}
+	}
+
+	.hero h4 {
+		padding: 0.5rem 0;
+		color: $white;
+	}
+
+	.hero img {
+		padding: 0.5rem 0;
+	}
+
+	.hero-cards {
+		display: flex;
+		flex-direction: column;
+
+		margin-top: 3rem;
+		margin-bottom: 1rem;
+
+		@include media-breakpoint-down(md) {
+			margin-top: 1.5rem;
+			margin-bottom: 0.5rem;
+		}
+	}
+
+		.hero-cards-left {
+			padding-right: 1rem;
+			width: 50%;
+			margin: 1rem 0;
+
+			@include media-breakpoint-down(md) {
+				width: 100%;
+				padding-right: 0;
+			}
+		}
+
+		.hero-cards-right {
+			padding-left: 1rem;
+			width: 50%;
+			margin: 1rem 0;
+
+			@include media-breakpoint-down(md) {
+				width: 100%;
+				padding-left: 0;
+			}
+		}
+
+		.hero-cards-first-row {
+			display: flex;
+			flex-direction: row;
+
+			@include media-breakpoint-down(md) {
+				flex-direction: column;
+			}
+		}
+
+		.hero-cards-second-row {
+			display: flex;
+			flex-direction: row;
+
+			@include media-breakpoint-down(md) {
+				flex-direction: column;
+			}
+		}
