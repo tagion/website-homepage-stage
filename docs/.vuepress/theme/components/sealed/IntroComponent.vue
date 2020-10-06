@@ -23,14 +23,14 @@
 
 		<div class="intro-buttons">
 			<div class="intro-buttons-left">
-				<a href="https://forum.tagion.org/t/new-members-intro-corner/30" target="_blank" class="btn">
+				<a href="https://forum.tagion.org/t/new-members-intro-corner/30" target="_blank" class="btn btn_redirect">
 					Discuss on Forum
 				</a>
-				<a href="https://t.me/tagionChat" target="_blank" class="btn">
+				<a href="https://t.me/tagionChat" target="_blank" class="btn btn_redirect">
 					Chat in Telegram
 				</a>
-				<a @click="scrollToAlphaOne" class="btn">
-					AlphaOne Network Release
+				<a @click="scrollToAlphaOne" class="btn btn_scroll">
+					AlphaOne Release
 				</a>
 			</div>
 

@@ -7,10 +7,18 @@
 .whitepaper {
 	background-color: $blue-dark;
 	color: $white;
+	height: 400px;
 
   display: flex;
   justify-content: center;
 	align-items: center;
+
+	@include media-breakpoint-down(xl) {
+		height: 330px;
+	}
+	@include media-breakpoint-down(lg) {
+		height: 260px;
+	}
 }
 
 .whitepaper-left {
@@ -36,7 +44,13 @@
 }
 
 .whitepaper-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
 	width: 50%;
+	height: 100%;
 
 	@include media-breakpoint-down(md) {
 		width: 100%;
@@ -45,13 +59,13 @@
 
 .whitepaper-right .whitepaper__text {
 	color: $white;
-	margin: 1rem;
+	margin: 1rem 0;
 }
 
 .whitepaper__download {
 	display: flex;
 	width: 50%;
-	margin: 1rem;
+	margin: 1rem 0;
 
 	.whitepaper__download-text {
 		margin-right: 1rem;

@@ -17,7 +17,7 @@
 
 	.roadmap-text {
 		position: sticky;
-		top: 5rem;
+		top: 7rem;
 		display: table; // needed to make sticky work
 		width: 50%;
 		padding-right: 5rem;
@@ -75,8 +75,29 @@
 					font-weight: 400;
 
 					position: relative;
-					top: 15px;
-					right: 25px;
+					top: 24px;
+					right: 55px;
+
+					@include media-breakpoint-down(xl) {
+						top: 20px;
+						right: 45px;
+					}
+					@include media-breakpoint-down(lg) {
+						top: 17px;
+						right: 40px;
+					}
+					@include media-breakpoint-down(md) {
+						top: 15px;
+						right: 30px;
+					}
+					@include media-breakpoint-down(sm) {
+						top: 13px;
+						right: 20px;
+					}
+					@include media-breakpoint-down(xs) {
+						top: 10px;
+						right: 5px;
+					}
 				}
 
 				.roadmap-scheme-timeline-wrapper-section {

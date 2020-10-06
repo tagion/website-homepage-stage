@@ -22,7 +22,6 @@
 			width: 50%;
 			color: $blue-dark;
 			margin-right: 3rem;
-			margin-top: 3rem;
 
 			@include media-breakpoint-down(lg) {
 				width: 100%;
@@ -55,7 +54,6 @@
 
 			.people-right__b-tabs .nav.nav-tabs {
 				border: none;
-				margin: 3rem;
 
 				& .nav-link {
 					border: none;

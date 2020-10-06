@@ -37,7 +37,7 @@
 
 		h3 {
 			@include media-breakpoint-down(xl) {
-				font-size: 2rem;
+				font-size: 1.9rem;
 			}
 			@include media-breakpoint-down(lg) {
 				font-size: 1.5rem;
@@ -103,7 +103,6 @@
 
 	.alphanet-extra-info-bounty {
 		width: 50%;
-		margin: 0.5rem 0;
 		padding-left: 1rem;
 
 		@include media-breakpoint-down(md) {
