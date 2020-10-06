@@ -35,3 +35,5 @@ export default {
   }
 };
 </script>
+
+<style src="../../styles/team-card-component.scss" lang="scss"></style>

@@ -1,13 +1,10 @@
 <template>
-	<div class="lcontainer-wrapper lcontainer-wrapper--people">
-		<b-container class="lcontainer people">
-
+	<div class="people">
+		<b-container class="people-wrapper">
 			<div class="people-left">
-				<h2 class="heading1"> The Team Behind Tagion </h2>
+				<h2> The Team Behind Tagion </h2>
 
-				<div>
-					<img src="/icons/line-icon.png" class="people-left__img">
-				</div>
+				<img src="/icons/line-icon.png" class="people-left__img">
 
 				<p class="people-left__text paragraph1">
 					Tagion is an open-source project with members contributing from all over the planet. The company currently
@@ -15,13 +12,11 @@
 					resources working on the Tagion project.
 				</p>
 
-				<div>
-					<img src="/icons/line-icon.png" class="people-left__img">
-				</div>
+				<img src="/icons/line-icon.png" class="people-left__img">
 			</div>
 
 			<div class="people-right">
-				<b-tabs content-class="" class="people-right__b-tabs" align="center">
+				<b-tabs class="people-right__b-tabs" align="center">
 
 					<b-tab title="Management" active>
 						<reveal class="team-table">
@@ -78,7 +73,6 @@
 
 				</b-tabs>
 			</div>
-
 		</b-container>
 	</div>
 </template>
@@ -99,30 +93,9 @@
     };
   },
   components: {
-    // LayoutDefault,
-    // RevealGroup,
-    // WhitePaper: () => import("@theme/components/sealed/WhitePaper"),
-    // Roadmap: () => import("@theme/components/sealed/Roadmap"),
 		BrandButton,
 		TeamCard,
-    // DownloadBrandButton,
-    // SocialButtons,
-    // NewsletterForm,
-    // TeamCard,
     Reveal,
-		// News,
-		// Intro,
-  },
-  methods: {
-    // openTeamCard(teamMember) {
-    //   this.selectedTeamMember = teamMember;
-    // },
-    // closeTeamCard() {
-    //   this.selectedTeamMember = false;
-    // },
-    // scrollToAlphaOne() {
-    //   this.$scrollTo(this.$refs["alphaone"]);
-    // },
   },
 };
 </script>

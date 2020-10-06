@@ -1,0 +1,113 @@
+@import "./config";
+@import "./type";
+@import "node_modules/bootstrap/scss/mixins";
+
+
+
+
+.alphanet {
+	background-color: $blue-light;
+
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.alphanet-cards {
+	display: flex;
+	flex-direction: column;
+	margin: 4rem 0;
+
+	@include media-breakpoint-down(md) {
+		margin: 2rem 0;
+	}
+}
+
+	.alphanet-cards-first-column, .alphanet-cards-second-column, .alphanet-cards-third-column {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+
+		@include media-breakpoint-down(md) {
+			flex-direction: column;
+			width: 100%;
+			margin: 0;
+		}
+
+		h3 {
+			@include media-breakpoint-down(xl) {
+				font-size: 2rem;
+			}
+			@include media-breakpoint-down(lg) {
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+		.alphanet-cards-card {
+			width: 50%;
+			margin: 1rem 0;
+
+			@include media-breakpoint-down(md) {
+				width: 100%;
+			}
+		}
+
+		.alphanet-cards-card_left {
+			padding-right: 1rem;
+
+			@include media-breakpoint-down(md) {
+				padding-right: 0;
+			}
+		}
+
+		.alphanet-cards-card_right {
+			padding-left: 1rem;
+
+			@include media-breakpoint-down(md) {
+				padding-left: 0;
+			}
+		}
+
+			.alphanet-cards-card__img {
+				width: 96px;
+				margin: 0;
+
+				@include media-breakpoint-down(xl) {
+					width: 84px;
+				}@include media-breakpoint-down(md) {
+					width: 72px;
+				}
+			}
+
+.alphanet-extra-info {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	@include media-breakpoint-down(md) {
+		flex-direction: column;
+	}
+}
+
+	.alphanet-extra-info-alphaone {
+		width: 50%;
+		padding-right: 1rem;
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+			padding-right: 0;
+		}
+	}
+
+	.alphanet-extra-info-bounty {
+		width: 50%;
+		margin: 0.5rem 0;
+		padding-left: 1rem;
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+			padding-left: 0;
+		}
+	}

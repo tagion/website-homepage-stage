@@ -1,0 +1,140 @@
+@import "./config";
+@import "./type";
+@import "node_modules/bootstrap/scss/mixins";
+
+
+
+
+.team-table__card {
+	cursor: pointer;
+	display: block;
+	margin: 1rem 0;
+	transition: transform 100ms ease;
+	z-index: 1;
+}
+
+	.team-table__card-bio {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include media-breakpoint-down(md) {
+			flex-direction: column;
+		}
+
+		.team-table__card-avatar {
+			width: 30%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 5em;
+
+			img {
+				width: 9rem;
+				min-height: auto;
+				height: auto;
+				border: 2px solid #fff;
+				border-radius: 400px;
+				position: relative;
+				z-index: 1;
+
+				@include media-breakpoint-down(lg) {
+					width: 9rem;
+				}
+				@include media-breakpoint-down(md) {
+					width: 6rem;
+				}
+				@include media-breakpoint-down(sm) {
+					width: 5rem;
+				}
+			}
+		}
+
+		.team-table__card-header {
+			width: 70%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			margin: 1rem;
+			color: $blue-dark;
+			text-align: center;
+
+			@include media-breakpoint-down(md) {
+				align-items: center;
+				// padding-top: 1rem;
+			}
+
+			.team-table__card-name {
+				text-align: center;
+				font-weight: 500;
+			}
+
+			.team-table__card-position {
+				text-align: left;
+			}
+
+			.team-table__card-about {
+				top: calc(100% + 0.7rem);
+				left: 0;
+				padding-top: 0.6rem;
+				width: 100%;
+				text-align: left;
+
+				p {
+					text-align: left;
+				}
+			}
+		}
+	}
+
+	.team-table__card-read-more {
+		color: black;
+		opacity: 0;
+		transition: opacity 200ms, transform 200ms;
+		// position: absolute;
+		text-align: center;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+		font-size: 1rem;
+		transform: translateY(4px);
+
+		@include media-breakpoint-down(sm) {
+			opacity: 0;
+			// bottom: -1.2rem;
+		}
+	}
+
+	.team-table__card:hover {
+		z-index: 3;
+
+		&::before {
+			opacity: 0.03;
+			bottom: -1.2rem;
+		}
+
+		.team-table__card-read-more {
+			opacity: 0.8;
+			transform: translateY(0);
+		}
+	}
+
+	.team-table__card::before {
+		content: "";
+		position: absolute;
+		top: -0.6rem;
+		left: -0.6rem;
+		right: -0.6rem;
+		border-radius: 2px;
+		bottom: -0.6rem;
+		background: $primary;
+		opacity: 0;
+		z-index: -1;
+		transition: all 100ms ease;
+	}
+
+	h5 {
+		text-align: center;
+		margin: auto;
+		display: block;
+	}

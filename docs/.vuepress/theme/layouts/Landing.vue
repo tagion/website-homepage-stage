@@ -1,6 +1,9 @@
 <template>
+
   <layout-default class="landing-page" id="landing-page">
+
     <template slot="root-content">
+
       <reveal-group class="landing">
 
 				<IntroComponent></IntroComponent>
@@ -587,8 +590,11 @@
 
 
       </reveal-group>
+
     </template>
+
   </layout-default>
+
 </template>
 
 
@@ -597,69 +603,68 @@
 
 
 <script>
-import LayoutDefault from "@theme/components/layout/LayoutDefault";
-import RevealGroup from "@theme/components/transition/RevealGroup";
-import BrandButton from "@theme/components/sealed/BrandButton";
-import SocialButtons from "@theme/components/sealed/SocialButtons";
-import DownloadBrandButton from "@theme/components/sealed/DownloadBrandButton";
-import NewsletterForm from "@theme/components/sealed/NewsletterForm";
-import TeamCard from "@theme/components/sealed/TeamCard";
-import Reveal from "@theme/components/transition/Reveal";
-import News from "@theme/components/sealed/News";
-import IntroComponent from "@theme/components/sealed/IntroComponent";
-import HeroComponent from "@theme/components/sealed/HeroComponent";
-import HowComponent from "@theme/components/sealed/HowComponent";
-import WhatWhereComponent from "@theme/components/sealed/WhatWhereComponent";
-import WhitePaperComponent from "@theme/components/sealed/WhitePaperComponent";
-import AlphaOneComponent from "@theme/components/sealed/AlphaOneComponent";
-import RoadmapComponent from "@theme/components/sealed/RoadmapComponent";
-import PeopleComponent from "@theme/components/sealed/PeopleComponent";
+	import LayoutDefault from "@theme/components/layout/LayoutDefault";
+	import RevealGroup from "@theme/components/transition/RevealGroup";
+	import BrandButton from "@theme/components/sealed/BrandButton";
+	import SocialButtons from "@theme/components/sealed/SocialButtons";
+	import DownloadBrandButton from "@theme/components/sealed/DownloadBrandButton";
+	import NewsletterForm from "@theme/components/sealed/NewsletterForm";
+	import TeamCard from "@theme/components/sealed/TeamCard";
+	import Reveal from "@theme/components/transition/Reveal";
+	import News from "@theme/components/sealed/News";
+	import IntroComponent from "@theme/components/sealed/IntroComponent";
+	import HeroComponent from "@theme/components/sealed/HeroComponent";
+	import HowComponent from "@theme/components/sealed/HowComponent";
+	import WhatWhereComponent from "@theme/components/sealed/WhatWhereComponent";
+	import WhitePaperComponent from "@theme/components/sealed/WhitePaperComponent";
+	import AlphaOneComponent from "@theme/components/sealed/AlphaOneComponent";
+	import RoadmapComponent from "@theme/components/sealed/RoadmapComponent";
+	import PeopleComponent from "@theme/components/sealed/PeopleComponent";
 
-import { isMobile } from "@theme/util";
-import { teamMembers, advisers } from "@theme/data";
+	import { isMobile } from "@theme/util";
+	import { teamMembers, advisers } from "@theme/data";
 
-export default {
-  data() {
-    return {
-      teamMembers,
-      advisers,
-      selectedTeamMember: undefined,
-    };
-  },
-  components: {
-    LayoutDefault,
-    RevealGroup,
-    WhitePaper: () => import("@theme/components/sealed/WhitePaper"),
-    Roadmap: () => import("@theme/components/sealed/Roadmap"),
-    BrandButton,
-    DownloadBrandButton,
-    SocialButtons,
-    NewsletterForm,
-    TeamCard,
-    Reveal,
-		News,
-		IntroComponent,
-		HeroComponent,
-		HowComponent,
-		WhatWhereComponent,
-		WhitePaperComponent,
-		AlphaOneComponent,
-		RoadmapComponent,
-		PeopleComponent,
-  },
-  methods: {
-    openTeamCard(teamMember) {
-      this.selectedTeamMember = teamMember;
-    },
-    closeTeamCard() {
-      this.selectedTeamMember = false;
-    },
-    scrollToAlphaOne() {
-      this.$scrollTo(this.$refs["alphaone"]);
-    },
-  },
-};
+	export default {
+		data() {
+			return {
+				teamMembers,
+				advisers,
+				selectedTeamMember: undefined,
+			};
+		},
+		components: {
+			LayoutDefault,
+			RevealGroup,
+			WhitePaper: () => import("@theme/components/sealed/WhitePaper"),
+			Roadmap: () => import("@theme/components/sealed/Roadmap"),
+			BrandButton,
+			DownloadBrandButton,
+			SocialButtons,
+			NewsletterForm,
+			TeamCard,
+			Reveal,
+			News,
+			IntroComponent,
+			HeroComponent,
+			HowComponent,
+			WhatWhereComponent,
+			WhitePaperComponent,
+			AlphaOneComponent,
+			RoadmapComponent,
+			PeopleComponent,
+		},
+		methods: {
+			openTeamCard(teamMember) {
+				this.selectedTeamMember = teamMember;
+			},
+			closeTeamCard() {
+				this.selectedTeamMember = false;
+			},
+			scrollToAlphaOne() {
+				this.$scrollTo(this.$refs["alphaone"]);
+			},
+		},
+	};
 </script>
-
 
 <style src="../styles/landing.scss" lang="scss"></style>

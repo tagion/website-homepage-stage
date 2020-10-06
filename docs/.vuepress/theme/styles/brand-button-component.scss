@@ -1,0 +1,130 @@
+@import "./config";
+@import "./type";
+@import "node_modules/bootstrap/scss/mixins";
+
+
+
+
+
+
+.brand-button {
+  display: flex;
+  justify-content: flex-start;
+	align-items: center;
+
+	width: 18rem;
+	margin: 1rem 0;
+	padding: 0.5rem 0;
+	font-size: 1.25rem;
+
+	cursor: pointer;
+	color: $white;
+
+	@include media-breakpoint-down(md) {
+		width: 14rem;
+		font-size: 1rem;
+	}
+	@include media-breakpoint-down(xs) {
+		width: 14rem;
+		font-size: 0.9rem;
+	}
+
+  .brand-button__text {
+    transition: all 400ms;
+  }
+
+  .brand-button__wrapper {
+    transition: all 400ms;
+  }
+
+  .brand-button__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+		width: 30px;
+		height: 30px;
+    margin-right: 1rem;
+
+		@include media-breakpoint-down(md) {
+			width: 25px;
+			height: 25px;
+			margin-right: 0.75rem;
+		}
+		@include media-breakpoint-down(xs) {
+			width: 20px;
+			height: 20px;
+			margin-right: 0.5rem;
+		}
+
+    &::before {
+      content: "";
+      width: 45%;
+      height: 45%;
+      background: url(/icons/arrow.svg) center no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &:hover {
+    .brand-button__wrapper {
+			transform: translateX(5px);
+    }
+
+    .brand-button__text {
+			transform: translateX(8px);
+			color: $white;
+    }
+  }
+
+  // &.brand-button--close {
+  //   &:hover {
+  //     .brand-button__wrapper {
+  //       transform: translateX(0px);
+  //     }
+  //   }
+  //   .brand-button__icon {
+  //     background: #e6e9f3;
+
+  //     svg {
+  //       width: 45%;
+  //       height: 45%;
+  //     }
+
+  //     &::before {
+  //       content: none;
+  //     }
+  //   }
+  // }
+
+  // &.brand-button--download {
+  //   flex-direction: column;
+
+  //   .brand-button__icon {
+  //     margin-right: 0;
+  //   }
+  //   .brand-button__icon::before {
+  //     transform: rotateZ(90deg);
+  //   }
+  //   .brand-button__wrapper {
+  //     margin-top: 0.5rem;
+  //   }
+
+  //   &:hover {
+  //     .brand-button__wrapper {
+  //       transform: translateY(8px);
+  //     }
+
+  //     .brand-button__text {
+  //       transform: translateY(4px);
+  //     }
+  //   }
+  // }
+
+  // &.brand-button--down {
+  //   .brand-button__icon::before {
+  //     transform: rotateZ(90deg);
+  //   }
+  // }
+}
+
+
